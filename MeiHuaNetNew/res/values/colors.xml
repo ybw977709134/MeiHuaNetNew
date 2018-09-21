@@ -1,0 +1,44 @@
+<resources>
+
+    <color name="blue">#0066cc</color>
+    <color name="gray">#c4c4c4</color>
+    <color name="translucent_background">#00000000</color>
+    <color name="dialog_translucent_bg">#55c4c4c4</color>
+    
+    <!-- 白色，灰色，黑色 -->
+    <color name="white">#ffffff</color>
+    <color name="black_c">#cccccc</color>
+    <color name="black_9">#999999</color>
+    <color name="black_6">#666666</color>
+    <color name="black_3">#333333</color>
+    <color name="black">#000000</color>
+
+    <!-- 顶部标题栏中字体的颜色 -->
+    <color name="title_font_color">#F2F2F2</color>
+    
+    <!-- 设置页中的颜色值 -->
+    <color name="stroke_set_color">#CDCDCD</color>
+    <color name="set_vertical_line">#E5E5E5</color>
+    <color name="set_left_font_color">#666666</color>
+    <color name="set_right_font_color">#A8A8A8</color>
+    
+    <!-- 反馈页中 -->
+    <color name="stroke_feedback_color">#CACACA</color>
+    <color name="feedback_font_color">#666666</color>
+    <color name="feedback_tel_color">#1B5DA5</color>
+    
+    <!-- list项中 -->
+    <color name="list_item_title_color">#333333</color>
+    <color name="list_item_date_color">#999999</color>
+    <color name="list_item_stroke_color">#CACACA</color>
+    <color name="list_item_bg">#FFFFFF</color>
+    <color name="list_item_bg_choice">#99CCFF</color>
+    <color name="list_item_summary_color">#333333</color>
+    
+    <color name="listview_category_bg_color">#F9F9F9</color>
+    <color name="listview_category_item_font_color">#666666</color>
+    
+    <color name="media_detail_black">#000000</color>
+    <color name="link_color">#145dac</color>
+    
+</resources>

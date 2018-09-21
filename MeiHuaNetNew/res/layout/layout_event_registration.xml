@@ -1,0 +1,497 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_registration_all_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 必填信息 -->
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/detail_title_bar"
+                android:layout_marginBottom="7dp"
+                android:text="@string/required_information" />
+
+            <LinearLayout style="@style/registration_linearlayout" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/registration_left_textview"
+                    android:text="@string/name" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/registration_name"
+                    style="@style/registration_right_edittext" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/registration_linearlayout" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/registration_left_textview"
+                    android:text="@string/company" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/registration_company"
+                    style="@style/registration_right_edittext" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/registration_linearlayout" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/registration_left_textview"
+                    android:text="@string/jobtitle" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/registration_jobtitle"
+                    style="@style/registration_right_edittext" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/registration_linearlayout" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/registration_left_textview"
+                    android:text="@string/register_mobilephone" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/registration_mobilephone"
+                    style="@style/registration_right_edittext" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/registration_linearlayout" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/registration_left_textview"
+                    android:text="@string/register_email" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/registration_email"
+                    style="@style/registration_right_edittext" />
+            </LinearLayout>
+            <!-- 可选信息 -->
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/detail_title_bar"
+                android:layout_marginBottom="7dp"
+                android:text="@string/optional_information" />
+
+            <LinearLayout style="@style/registration_linearlayout" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/registration_left_textview"
+                    android:text="@string/sinaweibo" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/registration_sinaweibo"
+                    style="@style/registration_right_edittext" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/registration_linearlayout" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/registration_left_textview"
+                    android:text="@string/weixin" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/registration_weixin"
+                    style="@style/registration_right_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/registration_pay_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 请选择付款方式 -->
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/detail_title_bar"
+                    android:text="@string/choice_pay_type" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/registration_event_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp"
+                    android:textColor="#c2860a"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/registration_radiobtn_group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checkedButton="@+id/radiobtn_alipay"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/radiobtn_alipay"
+                        style="@style/myradiobtn"
+                        android:text="@string/alipay_payment" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="@string/no_alipay"
+                        android:textColor="@color/black_3"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radiobtn_bank_transfor"
+                        style="@style/myradiobtn"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/bank_transfor_account" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="@string/transfor_intro"
+                        android:textColor="@color/black_3"
+                        android:textSize="14sp" />
+                </RadioGroup>
+                <!-- 发票信息 -->
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/detail_title_bar"
+                    android:text="@string/invoice_info" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="6dp" >
+
+                    <!-- 是否需要发票 -->
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        style="@style/invoice_text"
+                        android:text="@string/is_need_invoice" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:checkedButton="@+id/registration_not_need" >
+
+                        <RadioButton
+                            android:id="@+id/registration_not_need"
+                            style="@style/myradiobtn"
+                            android:text="@string/donot_need" />
+
+                        <RadioButton
+                            android:id="@+id/registration_need"
+                            style="@style/myradiobtn"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/need" />
+                    </RadioGroup>
+
+                    <!-- 需要发票时显示的布局 -->
+
+                    <LinearLayout
+                        android:id="@+id/registration_isneed_invoice_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <!-- 发票类型 -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical" >
+
+                            <com.MeiHuaNet.view.TextViewFont
+                                style="@style/invoice_text"
+                                android:text="@string/invoice_type" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="horizontal"
+                                android:checkedButton="@+id/registration_regular_invoice" >
+
+                                <RadioButton
+                                    android:id="@+id/registration_regular_invoice"
+                                    style="@style/myradiobtn"
+                                    android:text="@string/regular_invoice" />
+
+                                <RadioButton
+                                    android:id="@+id/registration_value_add_invoice"
+                                    style="@style/myradiobtn"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="@string/value_add_invoice" />
+                            </RadioGroup>
+                        </LinearLayout>
+                        <!-- 增值发票时显示的布局 -->
+
+                        <LinearLayout
+                            android:id="@+id/registration_valueadd_invoice_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <com.MeiHuaNet.view.TextViewFont
+                                style="@style/invoice_text"
+                                android:text="@string/valueadd_invoice_fill" />
+                            <!-- 单位名称 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/firm_name" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_firm_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 纳税人识别号 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/taxcode" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_taxcode_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 注册地址 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/regist_address" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_regist_address_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 注册电话 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/regist_phone" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_regist_phone_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 开户银行 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/deposit_bank" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_deposit_bank_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 银行账号 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/bank_account" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_bank_account_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 收件人 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/receiver" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_receiver_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 联系电话 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/contact_phone" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_contact_phone_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 收件地址 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/posting_address" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_posting_address_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 邮编 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/postcode" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_valueadd_postcode_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!-- 普通发票时显示的布局 -->
+
+                        <LinearLayout
+                            android:id="@+id/registration_regular_invoice_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <!-- 发票抬头 -->
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/invoice_text"
+                                    android:text="@string/invoice_title" />
+
+                                <RadioGroup
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="horizontal"
+                                    android:checkedButton="@+id/registration_personal_invoice" >
+
+                                    <RadioButton
+                                        android:id="@+id/registration_personal_invoice"
+                                        style="@style/myradiobtn"
+                                        android:text="@string/personal" />
+
+                                    <RadioButton
+                                        android:id="@+id/registration_firm_invoice"
+                                        style="@style/myradiobtn"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="@string/firm" />
+                                </RadioGroup>
+                            </LinearLayout>
+                            <!-- 单位名称 -->
+
+                            <LinearLayout
+                                android:id="@+id/invoice_regular_firm_layout"
+                                style="@style/registration_invoice_linearlayout"
+                                android:visibility="gone" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/firm_name" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_regular_firm_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 收件人 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/receiver" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_regular_receiver_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 联系电话 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/contact_phone" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_regular_contact_phone_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 收件地址 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/posting_address" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_regular_posting_address_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                            <!-- 邮编 -->
+
+                            <LinearLayout style="@style/registration_invoice_linearlayout" >
+
+                                <com.MeiHuaNet.view.TextViewFont
+                                    style="@style/registration_invoice_left_textview"
+                                    android:text="@string/postcode" />
+
+                                <com.MeiHuaNet.view.EditTextFont
+                                    android:id="@+id/invoice_regular_postcode_edit"
+                                    style="@style/registration_invoice_right_edittext" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <com.MeiHuaNet.view.TextViewFont
+                            style="@style/invoice_text"
+                            android:text="@string/need_help" />
+
+                        <com.MeiHuaNet.view.TextViewFont
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pay_intro"
+                            android:textColor="#ff0000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lightbitmapbg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_sliding" />
+
+    <com.MeiHuaNet.view.SlidingLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <!-- 登录账号 -->
+
+        <RelativeLayout style="@style/set_item_relative_layout" >
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:id="@+id/set_login_tv"
+                style="@style/set_left_textview_layout" />
+
+            <ImageView
+                android:id="@+id/set_vip_img"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/set_login_tv"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/vip_img"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/set_login_right_layout"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true" >
+
+                <ImageView
+                    android:id="@+id/set_login_img"
+                    android:layout_width="27dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/setting_longin_img" />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/set_vertical_line" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 正文字号 -->
+
+        <RelativeLayout style="@style/set_item_relative_layout" >
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/set_left_textview_layout"
+                android:text="@string/content_font" />
+
+            <RelativeLayout
+                android:id="@+id/set_content_font_layout"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/set_cotent_font_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/set_right_font_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/set_vertical_line" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 绑定其他平台 -->
+
+        <RelativeLayout
+            android:id="@+id/set_authorize_layout"
+            style="@style/set_item_relative_layout" >
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/set_left_textview_layout"
+                android:text="@string/bind_other_platform" />
+        </RelativeLayout>
+
+        <!-- 意见反馈和关于我们 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/square_solid"
+            android:paddingLeft="10dp" >
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:id="@+id/set_advance_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:text="@string/advance_feedback"
+                android:textColor="@color/set_left_font_color"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/horizontal_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/set_advance_feedback"
+                android:background="@drawable/setting_horizontal_cut_line" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:id="@+id/set_about_us"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/horizontal_line"
+                android:gravity="center_vertical"
+                android:text="@string/about_us"
+                android:textColor="@color/set_left_font_color"
+                android:textSize="19sp" />
+        </RelativeLayout>
+    </com.MeiHuaNet.view.SlidingLinearLayout>
+
+</LinearLayout>

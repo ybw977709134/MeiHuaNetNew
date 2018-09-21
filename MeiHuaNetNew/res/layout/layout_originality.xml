@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lightbitmapbg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_sliding" />
+
+    <com.MeiHuaNet.view.SlidingLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/originality_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/originality_free_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/original_item_bg" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/free_btn" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:text="@string/free_tody"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/item_content_font_size" />
+                </RelativeLayout>
+
+                <com.MeiHuaNet.view.LinearListView
+                    android:id="@+id/originality_free_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f9f9f9"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/originality_category_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/original_item_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="3dp"
+                    android:text="@string/originality_category"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/item_content_font_size" />
+
+                <com.MeiHuaNet.view.LinearListView
+                    android:id="@+id/originality_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f9f9f9"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp" />
+            </LinearLayout>
+        </ScrollView>
+    </com.MeiHuaNet.view.SlidingLinearLayout>
+
+</LinearLayout>

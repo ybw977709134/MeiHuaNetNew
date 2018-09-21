@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/originality_item_all_layout"
+        style="@style/list_item_linearlayout"
+        tools:ignore="UselessParent" >
+
+        <com.MeiHuaNet.view.TextViewFont
+            android:id="@+id/originality_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/list_item_title_color"
+            android:textSize="@dimen/item_title_font_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/originality_item_img"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/originality_item_name"
+                    style="@style/originality_item_textview" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/originality_item_language"
+                    style="@style/originality_item_textview" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/originality_item_country"
+                    style="@style/originality_item_textview" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/originality_item_year"
+                    style="@style/originality_item_textview" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/originality_item_date"
+                    style="@style/originality_item_textview" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

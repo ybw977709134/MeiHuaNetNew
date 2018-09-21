@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_detail_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_back" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_detail_margin"
+            android:orientation="vertical" >
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:id="@+id/info_detail_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/list_item_title_color"
+                android:textSize="@dimen/item_title_font_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/info_detail_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/list_item_date_color"
+                    android:textSize="@dimen/item_date_font_size" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/info_detail_views"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/list_item_date_color"
+                    android:textSize="@dimen/item_date_font_size" />
+            </LinearLayout>
+
+            <com.MeiHuaNet.view.MyWebView
+                android:id="@+id/info_detial_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/translucent_background" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

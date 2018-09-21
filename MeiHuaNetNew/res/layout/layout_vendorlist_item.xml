@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/vendor_item_all_layout"
+        style="@style/list_item_linearlayout"
+        tools:ignore="UselessParent" >
+
+        <com.MeiHuaNet.view.TextViewFont
+            android:id="@+id/vendor_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/list_item_title_color"
+            android:textSize="@dimen/item_title_font_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/vendor_item_img"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/vendor_item_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/list_item_date_color"
+                    android:textSize="@dimen/item_content_font_size" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/vendor_item_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/list_item_date_color"
+                    android:textSize="@dimen/item_content_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

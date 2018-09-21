@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/event_popuwindow"
+    android:orientation="vertical">
+    <com.MeiHuaNet.view.TextViewFont
+        android:id="@+id/event_popu_up"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#f2f2f2" />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"/>
+    <com.MeiHuaNet.view.TextViewFont
+        android:id="@+id/event_popu_down"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#f2f2f2" />
+    
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.MeiHuaNet"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name=".MyApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".activity.BaseActivity" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.MeiHuaNet.activity.menupage.SlidingMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.setting.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.infomation.InfoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.acepack.KnowledgeListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.acepack.KnowledgeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.acepack.CaseListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.acepack.MarketListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.acepack.CaseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.acepack.MarketInfoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.resource.MarketVendorListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.resource.VendorDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.recruit.RecruitDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.event.EventDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.MeiHuaNet.activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.MeiHuaNet.activity.login.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.MeiHuaNet.activity.event.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.MeiHuaNet.activity.resource.MediaCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.MeiHuaNet.activity.resource.MediainfoListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.MeiHuaNet.activity.resource.MediaDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.MeiHuaNet.activity.originality.OriginalityListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.MeiHuaNet.activity.setting.AuthManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.MeiHuaNet.activity.setting.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.MeiHuaNet.activity.vip.VipUpdateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.MeiHuaNet.activity.vip.VipIntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.MeiHuaNet.activity.originality.SeeVideoActivity"
+            android:screenOrientation="landscape" />
+
+        <!-- alipay used -->
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- shareSDK -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+            	Adapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter的类，
+            	这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。 
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+            <meta-data
+                android:name="Adapter"
+                android:value="cn.sharesdk.demo.MyAdapter" />
+
+            <!--
+            	Dropbox的SSO功能需要在此处添加一个对ACTION_VIEW事件的过滤器，其中的scheme是
+            	“db-”前缀再开发者应用的加上appKey。如果此过滤器不设置，则不能完成SSO功能授权
+            -->
+            <intent-filter>
+                <data android:scheme="db-7janx53ilz11gbs" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.MeiHuaNet.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        <!-- umeng -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4e409ac3431fe373020001ac" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL" android:value="baidu" >
+        </meta-data>
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+    </application>
+
+</manifest>

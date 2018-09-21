@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/darkbitmapbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/menu_top_bg" >
+
+        <!-- 没有登录时显示 -->
+
+        <LinearLayout
+            android:id="@+id/menu_no_login"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:gravity="bottom" >
+
+            <ImageView
+                android:id="@+id/menu_login_btn"
+                android:layout_width="60dp"
+                android:layout_height="27dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/menu_login" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/menu_cut_line" />
+        </LinearLayout>
+
+        <!-- 已登录时显示 -->
+
+        <LinearLayout
+            android:id="@+id/menu_login"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:visibility="gone" >
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:id="@+id/menu_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_c"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/menu_is_vip_img"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vip_img"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/menu_setting"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/setting_btn"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <!-- 菜单项 -->
+
+    <com.MeiHuaNet.view.MenuLinearLayout
+        android:id="@+id/menu_all_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- 资讯 -->
+
+        <RelativeLayout
+            android:id="@+id/menu_infomation_item"
+            style="@style/menu_item_layout" >
+
+            <ImageView
+                style="@style/menu_item_image_layout"
+                android:background="@drawable/info_img"
+                tools:ignore="ContentDescription" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/menu_item_text_layout"
+                android:text="@string/information" />
+
+            <TextView style="@style/menu_cut_line_layout" />
+        </RelativeLayout>
+        <!-- 锦囊 -->
+
+        <RelativeLayout
+            android:id="@+id/menu_ace_pack_item"
+            style="@style/menu_item_layout" >
+
+            <ImageView
+                style="@style/menu_item_image_layout"
+                android:background="@drawable/acepack_img" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/menu_item_text_layout"
+                android:text="@string/acepack" />
+
+            <TextView style="@style/menu_cut_line_layout" />
+        </RelativeLayout>
+        <!-- 资源 -->
+
+        <RelativeLayout
+            android:id="@+id/menu_resource_item"
+            style="@style/menu_item_layout" >
+
+            <ImageView
+                style="@style/menu_item_image_layout"
+                android:background="@drawable/resource_img" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/menu_item_text_layout"
+                android:text="@string/resource" />
+
+            <TextView style="@style/menu_cut_line_layout" />
+        </RelativeLayout>
+        <!-- 活动 -->
+
+        <RelativeLayout
+            android:id="@+id/menu_event_item"
+            style="@style/menu_item_layout" >
+
+            <ImageView
+                style="@style/menu_item_image_layout"
+                android:background="@drawable/event_img" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/menu_item_text_layout"
+                android:text="@string/event" />
+
+            <TextView style="@style/menu_cut_line_layout" />
+        </RelativeLayout>
+        <!-- 创意 -->
+
+        <RelativeLayout
+            android:id="@+id/menu_originality_item"
+            style="@style/menu_item_layout" >
+
+            <ImageView
+                style="@style/menu_item_image_layout"
+                android:background="@drawable/originality_img" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/menu_item_text_layout"
+                android:text="@string/originality" />
+
+            <TextView style="@style/menu_cut_line_layout" />
+        </RelativeLayout>
+    </com.MeiHuaNet.view.MenuLinearLayout>
+
+</LinearLayout>

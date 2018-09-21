@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/event_item_all_layout"
+        style="@style/list_item_linearlayout"
+        tools:ignore="UselessParent" >
+
+        <com.MeiHuaNet.view.TextViewFont
+            android:id="@+id/event_item_title"
+            style="@style/recruit_item_title_layout" />
+
+        <com.MeiHuaNet.view.TextViewFont
+            android:id="@+id/event_item_city"
+            style="@style/recruit_item_content_layout"
+            android:layout_below="@id/event_item_title" />
+
+        <com.MeiHuaNet.view.TextViewFont
+            android:id="@+id/event_item_date"
+            style="@style/recruit_item_content_layout"
+            android:layout_alignBaseline="@id/event_item_city"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/event_item_city" />
+
+        <com.MeiHuaNet.view.TextViewFont
+            android:id="@+id/event_item_price"
+            style="@style/recruit_item_content_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/event_item_city"
+            android:layout_marginRight="60dp" />
+
+        <com.MeiHuaNet.view.TextViewFont
+            android:id="@+id/event_item_have_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:text="@string/has_sign_up"
+            android:textColor="#46AD01"
+            android:textSize="@dimen/item_date_font_size" />
+    </RelativeLayout>
+
+</LinearLayout>

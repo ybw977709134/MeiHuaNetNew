@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 菜单栏框架中的主体视图与菜单视图间的阴影 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent" >
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+    <TextView 
+        android:layout_width="10dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/shape_gravity_bg"/>
+</LinearLayout>

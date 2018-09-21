@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    <include layout="@layout/layout_top_back"/>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout 
+                style="@style/register_linearlayout">
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/register_left_textview"
+                    android:text="@string/username" />
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/register_username"
+                    style="@style/register_right_edittext"
+                    android:hint="@string/hint" />
+            </LinearLayout>
+            <LinearLayout 
+                style="@style/register_linearlayout">
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/register_left_textview"
+                    android:text="@string/password" />
+                <EditText
+                    android:id="@+id/register_password"
+                    style="@style/register_right_edittext"
+                    android:hint="@string/hint"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+            <LinearLayout 
+                style="@style/register_linearlayout">
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/register_left_textview"
+                    android:text="@string/sure_password" />
+                <EditText
+                    android:id="@+id/register_sure_password"
+                    style="@style/register_right_edittext"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+             <LinearLayout 
+                style="@style/register_linearlayout">
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/register_left_textview"
+                    android:text="@string/register_email" />
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/register_email"
+                    style="@style/register_right_edittext" />
+            </LinearLayout>
+             <LinearLayout 
+                style="@style/register_linearlayout">
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/register_left_textview"
+                    android:text="@string/name" />
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/register_full_name"
+                    style="@style/register_right_edittext" />
+            </LinearLayout>
+             <LinearLayout 
+                style="@style/register_linearlayout">
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/register_left_textview"
+                    android:text="@string/company" />
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/register_company"
+                    style="@style/register_right_edittext" />
+            </LinearLayout>
+             <LinearLayout 
+                style="@style/register_linearlayout">
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/register_left_textview"
+                    android:text="@string/jobtitle" />
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/register_jobtitle"
+                    style="@style/register_right_edittext" />
+            </LinearLayout>
+             <LinearLayout 
+                style="@style/register_linearlayout">
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/register_left_textview"
+                    android:text="@string/register_mobilephone" />
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/register_phone"
+                    style="@style/register_right_edittext" />
+            </LinearLayout>
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

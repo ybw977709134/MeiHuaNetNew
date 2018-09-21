@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/free_originality_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.MeiHuaNet.view.TextViewFont
+        android:id="@+id/free_originality_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textColor="#666666"
+        android:textSize="19sp" />
+    <ImageView 
+        android:id="@+id/free_originality_item_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/acepack_line"/>
+</LinearLayout>

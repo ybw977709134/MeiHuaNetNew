@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.MeiHuaNet.view.TextViewFont
+        android:id="@+id/media_category_item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/listview_category_item_font_color"
+        android:textSize="19sp" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feedback_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lightbitmapbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_back_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/body_top_bg" >
+
+        <ImageView
+            android:id="@+id/title_back_left"
+            android:layout_width="18dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_left_margin"
+            android:background="@drawable/back_btn" />
+
+        <com.MeiHuaNet.view.TextViewFont
+            android:id="@+id/title_back_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_left_margin"
+            android:layout_toRightOf="@id/title_back_left"
+            android:text="@string/advance_feedback"
+            android:textColor="@color/title_font_color"
+            android:textSize="@dimen/title_font_size" />
+
+        <com.MeiHuaNet.view.TextViewFont
+            android:id="@+id/title_back_right"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="#6fc4ff"
+            android:textSize="@dimen/title_font_size" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/title_height"
+            android:layout_toLeftOf="@id/title_back_right"
+            android:background="@drawable/feedback_cur_line" />
+    </RelativeLayout>
+
+    <com.MeiHuaNet.view.EditTextFont
+        android:id="@+id/feedback_email"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:hint="@string/input_your_email"
+        android:background="@drawable/register_eidt_bg" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.MeiHuaNet.view.EditTextFont
+            android:id="@+id/send_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/feedback_edit_stroke"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:hint="@string/input_content"
+            android:maxLines="7"
+            android:minHeight="150dp"
+            android:padding="10dp"
+            android:textColorHint="#f0f0f0"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/tel_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_tel"
+                android:textColor="@color/feedback_font_color"
+                android:textSize="17sp" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:id="@+id/service_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/phone"
+                android:textColor="@color/feedback_tel_color"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

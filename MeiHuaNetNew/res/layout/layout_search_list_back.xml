@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lightbitmapbg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_back" />
+
+    <com.MeiHuaNet.view.SlidingLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.MeiHuaNet.view.NewRefreshListView
+            android:id="@+id/base_page_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+    </com.MeiHuaNet.view.SlidingLinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ratecard_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/ratecard_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <com.MeiHuaNet.view.TextViewFont
+        android:id="@+id/ratecard_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/media_detail_fontsize"
+        android:textColor="@color/media_detail_black" />
+
+</LinearLayout>

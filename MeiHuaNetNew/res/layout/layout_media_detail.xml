@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/media_detail_alllayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_back" />
+
+    <ScrollView
+        android:id="@+id/media_detail_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/detail_margin"
+                android:paddingRight="@dimen/detail_margin" >
+
+                <ImageView
+                    android:id="@+id/media_detail_img"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitCenter" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:id="@+id/media_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/media_detail_black"
+                        android:textSize="14sp" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:id="@+id/media_detail_name_en"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/media_detail_black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 媒体简介 -->
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/media_detail_title_textview"
+                android:text="@string/media_info_intro" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:id="@+id/media_detail_intro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/detail_margin"
+                android:paddingRight="@dimen/detail_margin"
+                android:textColor="@color/media_detail_black"
+                android:textSize="@dimen/media_detail_fontsize" />
+
+            <!-- 基本数据 -->
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/media_detail_title_textview"
+                android:text="@string/basedata" />
+
+            <LinearLayout
+                android:id="@+id/media_detail_basedata_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/detail_margin"
+                android:paddingRight="@dimen/detail_margin" />
+            <!-- 联系方式 -->
+
+            <com.MeiHuaNet.view.TextViewFont
+                style="@style/media_detail_title_textview"
+                android:text="@string/contact" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/detail_margin"
+                android:paddingRight="@dimen/detail_margin" >
+
+                <LinearLayout
+                    android:id="@+id/media_detail_email_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/media_email"
+                        android:textColor="@color/media_detail_black"
+                        android:textSize="@dimen/media_detail_fontsize" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:id="@+id/media_detail_email_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/link_color"
+                        android:textSize="@dimen/media_detail_fontsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/media_detail_contacts_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/media_contacts"
+                        android:textColor="@color/media_detail_black"
+                        android:textSize="@dimen/media_detail_fontsize" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:id="@+id/media_detail_contacts_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/media_detail_black"
+                        android:textSize="@dimen/media_detail_fontsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/media_detail_phone_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Phone_text"
+                        android:textColor="@color/media_detail_black"
+                        android:textSize="@dimen/media_detail_fontsize" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:id="@+id/media_detail_phone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/link_color"
+                        android:textSize="@dimen/media_detail_fontsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/media_detail_fax_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Fax"
+                        android:textColor="@color/media_detail_black"
+                        android:textSize="@dimen/media_detail_fontsize" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:id="@+id/media_detail_fax_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/media_detail_black"
+                        android:textSize="@dimen/media_detail_fontsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 刊例文档 -->
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:id="@+id/media_detail_ratecard_tv"
+                style="@style/media_detail_title_textview"
+                android:text="@string/ratecard_doc" />
+
+            <com.MeiHuaNet.view.LinearListView
+                android:id="@+id/media_detail_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/detail_margin"
+                android:paddingRight="@dimen/detail_margin" />
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

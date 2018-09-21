@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vip_intro_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_back" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vip_acepack"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        style="@style/vip_intro_title_textview"
+                        android:text="@string/vip_acepack" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        style="@style/vip_intro_content_textview"
+                        android:text="@string/vip_download_month" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vip_resource"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        style="@style/vip_intro_title_textview"
+                        android:text="@string/media_store" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        style="@style/vip_intro_content_textview"
+                        android:text="@string/vip_media_authrized" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        style="@style/vip_intro_title_textview"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/PRLink" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        style="@style/vip_intro_content_textview"
+                        android:text="@string/PRLink_intro" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vip_event"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        style="@style/vip_intro_title_textview"
+                        android:text="@string/vip_event" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        style="@style/vip_intro_content_textview"
+                        android:text="@string/vip_event_intro" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<resources>
+
+    <string name="app_name">梅捷咨询</string>
+
+    <!-- 下拉刷新的listview头部视图 -->
+    <string name="down_refresh">下拉可以刷新</string>
+    <string name="last_refresh">上次更新于</string>
+    <string name="loosen_refresh">松开可以刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="load_more">加载更多中…</string>
+    <string name="done">完毕</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <!-- 网络连接时用到 -->
+    <string name="check_network">请检查网络是否连接</string>
+    <string name="loading">请稍等…</string>
+    <string name="network_exception">网络异常，请稍后再试</string>
+    <string name="parse_exp">解析返回数据异常 </string>
+
+    <!-- 对话框中 -->
+    <string name="sure_exit_app">确定要退出应用吗？</string>
+    <string name="prompt">提示</string>
+
+    <!-- 设置页面 -->
+    <string name="setting">设置</string>
+    <string name="content_font">正文字号</string>
+    <string name="big">大</string>
+    <string name="middle">中</string>
+    <string name="small">小</string>
+    <string name="bind_other_platform">绑定其他平台</string>
+    <string name="advance_feedback">意见反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_us_company">武汉蓝软件有限公司成立于2010年</string>
+    <string name="contact_us">联系我们\n地址 : </string>
+
+    <!-- 资讯 -->
+    <string name="information">资讯</string>
+    <string name="read">阅读：</string>
+
+    <!-- 招聘 -->
+    <string name="recruit">招聘</string>
+    <string name="position_intro">职位描述</string>
+    <string name="application_position">点击在线申请此职位：</string>
+    <string name="recruit_email_title">招聘信息</string>
+
+    <!-- 反馈页面 -->
+    <string name="input_content">输入您要提交给我们的意见</string>
+    <string name="phone">400–880–4636</string>
+    <string name="service_tel">客服电话</string>
+    <string name="sure_call">确定拨打此客服电话？</string>
+    <string name="submit_content_is_null">提交内容为空</string>
+    <string name="send">发送</string>
+    <string name="image">图片</string>
+    <string name="download_image_fail">下载图片失败</string>
+    <string name="fail_download_file">文件下载失败</string>
+    <string name="file_couldnot_open">文件不能打开,请确保手机上已安装office办公软件（推荐下载:金山wps office）</string>
+    <string name="search">search</string>
+    <string name="input_your_email">请输入您的email</string>
+
+    <!-- 锦囊 -->
+    <string name="acepack">锦囊</string>
+    <string name="knowledge_center">知识中心</string>
+    <string name="case_center">案例中心</string>
+    <string name="marketing_info">营销百科</string>
+
+    <!-- 资源 -->
+    <string name="resource">资源</string>
+    <!-- 中国传媒库 -->
+    <string name="media_store">中国传媒库</string>
+    <string name="media_info_intro">媒体简介</string>
+    <string name="basedata">基本数据</string>
+    <string name="ratecard_doc">刊例文档</string>
+    <string name="media_email">Email：</string>
+    <string name="media_contacts">联系人：</string>
+    <string name="sure_send_email">确定要发送email到这个账号吗？</string>
+    <string name="sure_phone">确定要拨打这个电话号码？</string>
+    <string name="vip_update_prompt">"梅花网免费会员每月只能下载五份媒体刊例文档,升级为VIP权限后即可无限下载"</string>
+    <string name="update">升级</string>
+
+    <!-- 营销服务商 -->
+    <string name="market_vendor">营销服务商</string>
+    <string name="openyear">开设年份：</string>
+    <string name="employeeNumber">雇员人数：</string>
+    <string name="profileIntro">公司简介</string>
+    <string name="contact">联系方式</string>
+    <string name="StreetAddress">办公地址：</string>
+    <string name="PostCode">邮编：</string>
+    <string name="Phone_text">电话：</string>
+    <string name="Fax">传真：</string>
+    <string name="Email">电子邮件：</string>
+    <string name="Mobile">手机：</string>
+
+    <!-- 活动 -->
+    <string name="event">活动</string>
+    <string name="has_sign_up">已报名</string>
+    <string name="sign_up">报名</string>
+    <string name="past_event">往期活动</string>
+    <string name="myevent">已报名的</string>
+    <string name="add_schedule">加入日程</string>
+    <string name="event_intro">活动简介</string>
+    <string name="who_should_attend">谁应该来参加</string>
+    <string name="agenda_arrange">议程与安排</string>
+    <string name="friendly_remind">友情提示</string>
+    <string name="event_category">活动类别：</string>
+    <string name="event_price">收费：</string>
+    <string name="attend_event">参加梅捷咨询的活动</string>
+    <string name="add_schedule_success">已成功添加了日程记录</string>
+    <string name="required_information">必填信息</string>
+    <string name="optional_information">选填信息</string>
+    <string name="sinaweibo1">新浪微博</string>
+    <string name="weixin">微信</string>
+    <string name="free_event">免费活动</string>
+    <string name="pay">支付</string>
+    <string name="pay_event">付费活动</string>
+    <string name="choice_pay_type">请选择付款方式</string>
+    <string name="alipay_payment">使用支付宝（ALIPAY）付费</string>
+    <string name="no_alipay">同时支持各类银行卡，没有支付宝账户也可</string>
+    <string name="bank_transfor_account">银行电汇/转账</string>
+    <string name="transfor_intro">户名：</string>
+    <string name="invoice_info">发票信息</string>
+    <string name="is_need_invoice">是否需要发票</string>
+    <string name="need">需要</string>
+    <string name="donot_need">不需要</string>
+    <string name="invoice_type">发票类型</string>
+    <string name="regular_invoice">普通发票</string>
+    <string name="value_add_invoice">增值发票</string>
+    <string name="invoice_title">发票抬头</string>
+    <string name="personal">个人</string>
+    <string name="firm">公司</string>
+    <string name="receiver">收件人</string>
+    <string name="contact_phone">联系电话</string>
+    <string name="posting_address">收件地址</string>
+    <string name="postcode">邮编</string>
+    <string name="firm_name">单位名称</string>
+    <string name="need_help">如果您在索取发票过程中遇到任何困难需要我们的协助，请致电：021–62283509–655王玉婷</string>
+    <string name="pay_intro">请在2个工作日内完成支付，过期预订将被取消</string>
+    <string name="taxcode">纳税人识别号</string>
+    <string name="regist_address">注册地址</string>
+    <string name="regist_phone">注册电话</string>
+    <string name="deposit_bank">开户银行</string>
+    <string name="bank_account">银行账号</string>
+    <string name="valueadd_invoice_fill">增值税发票专用发票资质填写</string>
+    <string name="input_whole_info">请填入完整的信息后再提交</string>
+    <string name="registration_fail">报名失败，请稍后再试</string>
+    <string name="no_event">近期没有活动举办</string>
+
+    <!-- 创意 -->
+    <string name="originality">创意</string>
+    <string name="free_tody">今日免费创意列表</string>
+    <string name="originality_category">创意分类</string>
+    <string name="brandname">品牌名称 : </string>
+    <string name="language">语种 : </string>
+    <string name="country">国家或地区 : </string>
+    <string name="year_of_advertise">广告年份 : </string>
+    <string name="date_of_advertise">日期 : </string>
+    <string name="see_intro">您目前是试用版授权，使用该授权进行下载？</string>
+    <string name="no_authorize_see">您目前没有权限观看创意，如果有需要请与我们的工作人员联系。</string>
+    <string name="update_vip_prompt">免费会员是不能观看创意库视频，您要升级到梅花网VIP吗?</string>
+
+    <!-- 登录 -->
+    <string name="login">登录</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="please_input_username">请输入您的账号</string>
+    <string name="please_input_password">请输入您的密码</string>
+    <string name="new_user">新用户注册</string>
+    <string name="unsign_up">未登录</string>
+    <string name="username_unexist">用户名不存在</string>
+    <string name="password_error">密码错误</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+
+    <!-- 注册 -->
+    <string name="register">注册</string>
+    <string name="sure_password">确认密码</string>
+    <string name="name">姓名</string>
+    <string name="company">公司名称</string>
+    <string name="jobtitle">职位</string>
+    <string name="register_mobilephone">手机</string>
+    <string name="hint">6–12个英文字母或数字</string>
+    <string name="register_email">Email</string>
+    <string name="username_null">用户名不能为空</string>
+    <string name="input_right_username">请输入正确格式的用户名</string>
+    <string name="input_right_password">请输入正确格式的密码</string>
+    <string name="name_null">姓名不能为空</string>
+    <string name="password_null">密码不能为空</string>
+    <string name="sure_password_null">确认密码不能为空</string>
+    <string name="password_different">两次输入的密码不一样</string>
+    <string name="company_null">公司名称不能为空</string>
+    <string name="position_null">职位不能为空</string>
+    <string name="phone_null">手机号码不能为空</string>
+    <string name="email_null">Email不能为空</string>
+    <string name="input_right_email">请输入正确的email地址</string>
+    <string name="input_right_phone">请输入正确的电话号码</string>
+
+    <!-- 支付宝 -->
+    <string name="remote_call_failed">Failure calling remote service</string>
+    <string name="not_yet_authorized">尚未授权</string>
+
+    <!-- vip页面 -->
+    <string name="vip_update">升级VIP</string>
+    <string name="vip_free">您正准备查阅或下载的资料向梅花网VIP用户免费开放</string>
+    <string name="vip_after_activate">支付完成后数分钟内你的VIP权限即被激活</string>
+    <string name="choice_payment">选择支付方式</string>
+    <string name="allyear_member">全年会员：498</string>
+    <string name="halfyear_member">半年会员：300</string>
+    <string name="confirm_email">请确认您的Email，我们将发送开通通知到此邮箱</string>
+    <string name="consult_phone">网上支付咨询电话：400–800–4636</string>
+    <string name="know_about_vip">了解梅捷咨询VIP会员的所有权益</string>
+    <string name="vip_acepack">梅花网锦囊站更多资源</string>
+    <string name="vip_download_month">每月可下载50条资料\n（适合从事创意开发工作的朋友）</string>
+    <string name="vip_media_authrized">只有VIP用户才能向媒体主进行批量询盘 \n只有VIP用户才能将媒体产品导出EXCEL数据\n（适合企业和广告公司做媒介研究和媒介计划的朋友）</string>
+    <string name="PRLink">媒体公关连线</string>
+    <string name="PRLink_intro">可以查看或下载记者编辑联系资料每年50个\n可以加入媒体关系管理联系人数量100个\n（适合从事媒体关系和公关传讯工作的朋友）</string>
+    <string name="vip_event">梅花之友晚餐会和梅花之友咖啡馆</string>
+    <string name="vip_event_intro">这是梅花独具特色的会员社交活动。\n每年总计24次左右，VIP用户优先获得邀请席位免费参加，报名系统将识别VIP用户。</string>    
+	<string name="vip_invoice_send">发票邮递信息</string>
+	<string name="vip_invoice_send_in">（我们将在您付款后1–2个工作日内递出发票）</string>
+	<string name="vip_addressee">收件人：</string>
+	<string name="vip_address">收件地址：</string>
+	<string name="vip_postCode">邮编：</string>
+	<string name="vip_invoice_type">发票抬头：</string>
+	<string name="vip_addressee_null">收件人不能为空</string>
+	<string name="vip_address_null">收件地址不能为空</string>
+	<string name="vip_postCode_null">邮编不能为空</string>
+	<string name="input_right_postCode">请填入有效的邮编</string>
+	<string name="vip_invoice_type_null">发票抬头不能为空</string>
+	<string name="call_consult_phone">您确定要拨打这个咨询电话吗？</string>
+	<string name="vip_member_equity">VIP会员权益</string></resources>

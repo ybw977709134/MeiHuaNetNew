@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lightbitmapbg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_back" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_edit_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/username"
+                android:textColor="#646464"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/login_usernama_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/null_bg_edittext"
+                android:hint="@string/please_input_username"
+                android:textColorHint="#c4c4c4"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/login_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/password"
+                android:textColor="#646464"
+               android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/login_password_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textPassword"
+                android:hint="@string/please_input_password"
+                android:singleLine="true"
+                android:textColorHint="#c4c4c4"
+                android:background="@drawable/null_bg_edittext"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <com.MeiHuaNet.view.TextViewFont
+        android:id="@+id/login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="35dp"
+        android:textColor="#0066cc"
+        android:text="@string/new_user"
+        android:textSize="18sp" />
+
+</LinearLayout>

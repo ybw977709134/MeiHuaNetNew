@@ -1,0 +1,41 @@
+<com.MeiHuaNet.view.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/today_search_linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/shape_search_edit_bg" >
+
+        <com.MeiHuaNet.view.EditTextFont
+            android:id="@+id/today_search_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/null_bg_edittext"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:maxLines="1" />
+
+        <ImageView
+            android:id="@+id/today_search_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_search_arrow" />
+    </RelativeLayout>
+
+</com.MeiHuaNet.view.SlidingLinearLayout>

@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vip_update_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_back" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/vip_btn"
+                    android:layout_width="65dp"
+                    android:layout_height="47dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/vip_btn"
+                    tools:ignore="ContentDescription" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:id="@+id/vip_free_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/vip_btn"
+                    android:text="@string/vip_free"
+                    android:textColor="#1B5DA5"
+                    android:textSize="@dimen/vip_big_font_size" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/vip_free_tv"
+                    android:layout_below="@id/vip_free_tv"
+                    android:text="@string/vip_after_activate"
+                    android:textColor="#AF8124"
+                    android:textSize="@dimen/vip_small_font_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/acepack_line" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/choice_payment"
+                android:textColor="#666666"
+                android:textSize="@dimen/vip_middle_font_size" />
+
+            <!-- 支付方式 -->
+
+            <RadioGroup
+                android:id="@+id/vip_payment_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:checkedButton="@+id/vip_allyear_btn"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/vip_allyear_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/allyear_member"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/vip_big_font_size" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/halfyear_member"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/vip_big_font_size" />
+            </RadioGroup>
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/confirm_email"
+                android:textColor="#666666"
+                android:textSize="@dimen/vip_middle_font_size" />
+
+            <com.MeiHuaNet.view.EditTextFont
+                android:id="@+id/vip_email"
+                style="@style/vip_invoice_edittext" />
+
+            <com.MeiHuaNet.view.TextViewFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/is_need_invoice"
+                android:textColor="#666666"
+                android:textSize="@dimen/vip_middle_font_size" />
+
+            <!-- 是否需要发票 -->
+
+            <RadioGroup
+                android:id="@+id/vip_is_need_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:checkedButton="@+id/vip_not_need_btn"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/vip_not_need_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donot_need"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/vip_big_font_size" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/need"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/vip_big_font_size" />
+            </RadioGroup>
+
+            <!-- 需要发票时显示的布局 -->
+
+            <LinearLayout
+                android:id="@+id/vip_need_invoice_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_invoice_send"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/vip_middle_font_size" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_invoice_send_in"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/vip_small_font_size" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/vip_invoice_textview"
+                    android:text="@string/vip_addressee" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/vip_addressee"
+                    style="@style/vip_invoice_edittext" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/vip_invoice_textview"
+                    android:text="@string/vip_address" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/vip_address"
+                    style="@style/vip_invoice_edittext" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/vip_invoice_textview"
+                    android:text="@string/vip_postCode" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/vip_postcode"
+                    style="@style/vip_invoice_edittext" />
+
+                <com.MeiHuaNet.view.TextViewFont
+                    style="@style/vip_invoice_textview"
+                    android:text="@string/vip_invoice_type" />
+
+                <com.MeiHuaNet.view.EditTextFont
+                    android:id="@+id/vip_invoice_type"
+                    style="@style/vip_invoice_edittext" />
+            </LinearLayout>
+
+            <!-- 底部链接 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/vip_bottom_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/consult_phone_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/vip_arrow"
+                        tools:ignore="ContentDescription" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/consult_phone"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/vip_middle_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/member_benefit_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/vip_arrow"
+                        tools:ignore="ContentDescription" />
+
+                    <com.MeiHuaNet.view.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="@string/know_about_vip"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/vip_middle_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
